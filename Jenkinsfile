@@ -9,7 +9,7 @@ pipeline {
 
     stage('Build v13') {
       steps {
-        sh 'docker build -t odoo_v13:20220903 v13/'
+        sh 'docker build -t odoo_v13:20220903 /var/jenkins/workspace/docker_odoo_master/v13/'
       }
     }
 
