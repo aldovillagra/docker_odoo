@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Build v13') {
+      steps {
+        sh 'docker build -t odoo_v13:20220903 v13/'
+      }
+    }
+
   }
 }
